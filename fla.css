@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(32, 20, 20);
+}
+div.card{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+}
+div.card1{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+}
+div.card2{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+}
+div.card3{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+}
+div.card4{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+   
+}
+div.card5{
+    width: 500px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    font-size:30px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+
+}
+h5
+{
+    background-color: rgb(14, 158, 14);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 800px;
+    height: 60px;
+    font-size: 26px;
+    border-radius: 30px;
+    margin-left: 20%;
+}
+#menul{
+        width: 100px;      
+        display: flex;
+        flex-direction: column;
+        background-size:100% ;
+        justify-content: right;
+        background-color:rgb(14, 158, 14);
+        border-radius: 20px;
+        height: 50%;
+ }
+    
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 6px; 
+    }
+#menut{
+    width: 100%;
+    height: 80px;
+}
+    
+    #menut li a{
+        display: block;
+         padding: 15px;
+        height: 10px;
+        margin: 3px;
+        width: 100%;
+
+    }
+    #menut img{
+      width: 80px;
+      height: 80px;
+    }
+    button{
+        background-color:red; 
+color:white;
+border-radius: 20px;
+margin: 10px;
+}
+button:hover{
+    filter: brightness(50%);
+    
+}
+    ul{
+       display: flex;
+       margin: 0%;
+      text-align: end;
+      background-color: rgb(14, 158, 14);
+      flex-direction: row;
+      }
+
+   #menut li{
+        float: left;
+        display:inline;
+        text-decoration: none;
+    }
+   
+    #icons{
+        padding: 10px;
+        color: white;
+    }
+    hr{
+        margin: 0,1px;
+    }
+    h4{
+      margin: 0%;
+}
+img{
+    width: 100%;
+    height: 70%;
+    margin: 0%;
+}
+span{
+    color: white;
+    font-size: 22px;
+}
+span:hover{
+    filter: brightness(80%);
+}

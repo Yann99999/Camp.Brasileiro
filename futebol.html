@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASILEIRÃO</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link href="fla.css" rel = "stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="fla/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="menut">
+        <ul>  
+            <img src=lance.jpg>
+        
+           <li><a class="nav-link" href="index.html" > 
+                 
+        <span>Página Inicial</span>
+              </a> </li> 
+     <li><a class="nav-link" href="index.html" > 
+                 
+        <span>Histórico dos Times</span>
+              </a> </li>
+              <li><a class="nav-link" href="index.html" >   
+                <span>Últimas Notícias</span>
+            </a></li><hr>
+    <div id="icons">
+    <i class="material-icons">support_agent</i> <i class="material-icons"> announcement</i> <i class="material-icons">brightness_medium</i> <i class="material-icons">account_circle</i>
+</div>
+    </ul>
+    </div>
+    <section style="display: flex;">
+    <div id="menul" style="min-width:20%">
+        <img src=logo.jpg  border-radius="20px" alt="">
+        
+        <a class="nav-link" href="index.html" > 
+                 <i class="material-icons">
+                     backup_table</i>
+              
+                 <span >Dashboard</span></a><br>
+           
+         <a class="nav-link" href="index.html" > 
+                             <i class="material-icons">
+                                reorder</i>
+                 <span>Tabela</span>
+            </a><br>
+ 
+ 
+            <a class="nav-link" href="index.html" > 
+             <i class="material-icons">
+                settings_accessibility</i>
+             <span>Artilheiros</span>
+                 </a><br>
+             
+         
+ 
+        
+            <a class="nav-link" href="index.html" >  
+                               <i class="material-icons">
+                                stars</i>
+                 <span>Campeonato Brasileiro</span>
+             </a><br>
+             
+         
+ 
+         
+             <a class="nav-link" href="index.html" > 
+                                 <i class="material-icons">
+                                    api</i>
+                 <span>Campeonatos Estaduais</span>
+             </a><br>
+             
+         
+     
+ 
+         
+         
+         <a class="nav-link" href="index.html" > 
+                             <i class="material-icons">
+                                tour</i>
+                 <span>Copa do Brasil</span>
+             </a><br>
+            
+             
+         
+         
+             <a class="nav-link" href="index.html" > 
+                                 <i class="material-icons">
+                                    support</i>
+                 <span>Libertadores da América</span>
+             </a><br>
+             
+             <a class="nav-link" href="index.html" > 
+                                     <i  class="material-icons">
+                                        public</i>
+                     <span>Mundial de Clubes</span>
+                 </a><br>
+                
+                     
+                    
+ 
+         
+        
+             <a class="nav-link" href="charts.html">
+                 <i class="material-icons">
+                    import_export</i>
+                 <span>Série B</span></a><br>
+         
+ 
+         
+         
+             <a class="nav-link" href="tables.html">
+                 <i class="material-icons">
+                    poll</i>
+                 <span>Eficiencia</span></a>
+         
+ 
+         
+        <hr>
+ 
+        
+         <div class="text-center d-none d-md-inline">
+             <button class="rounded-circle border-0" id="sidebarToggle">Retomar</button>
+         </div>
+ </div>
+</div>
+
+<div id="Container1">
+    <h5>Desempenho dos 6 candidatos ao título do Campeonato Brasileiro (Dados da 34º Rodadas)</h5>
+    <div class="card">
+        <h2>Vitórias</h2>
+        <canvas id="myChart" width="7px" height="3px"> </canvas>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels:['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+            datasets: 
+            [{
+                label: '',
+                data: [19, 19, 18, 16 , 16, 14],
+                backgroundColor:[
+                'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',
+        ],
+                borderColor:[
+                'red',],
+                borderWidth: 2.5,}]},
+        options: {} });
+    </script>
+    </div>
+    <div class="card1">
+        <h2>Empates</h2>
+        <canvas id="myChart1" width="7px" height="3px"></canvas>
+        <script>
+            var ctx = document.getElementById('myChart1').getContext('2d');
+            var myRadarChart = new Chart(ctx, {
+         type: 'radar',
+         data:{
+            labels:['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+            datasets: [{
+                label: '',
+                data: [9, 8, 6, 10, 8, 11],
+                borderColor:[
+                'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',],
+           }]
+    },
+        options: {}});
+        </script>
+        </div>
+    <div class="card2">
+        <h2>Derrotas </h2>
+        <canvas id="myChart2" width="7px" height="3px"></canvas>
+        <script>   
+        var ctx = document.getElementById('myChart2').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                   labels: ['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+                    datasets: 
+                    [{
+                        label: '',
+                        data:[6,8,10,7,10,8],
+                        borderColor:[
+                        'rgb(255, 0, 0)',
+                        'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',],
+        borderWidth: 2.5}]},
+        options: {}});
+    </script>
+    </div>
+    <div class="card3">
+        <h2> Gols Próprios </h2>
+        <canvas id="myChart3" width="7px" height="3px"></canvas>
+        <script>   
+        var ctx = document.getElementById('myChart3').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'polarArea',
+                data: {
+                   labels:  ['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+                    datasets: [{
+                        data:[57,63,58,53,49,46],
+                        backgroundColor: [
+                        'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',],
+        borderWidth: 2.5}]},
+        options: {}});
+    </script>
+</div>
+<div class="card4">
+    <h2>Gols Contra</h2>
+    <canvas id="myChart4" width="7" height="3"></canvas>
+<script>
+var ctx = document.getElementById('myChart4').getContext('2d');
+var myPieChart = new Chart(ctx, {
+type: 'doughnut',
+data: {
+    labels: ['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+    datasets: [{
+        data: [31,44,42,36,40,32],
+        backgroundColor: [
+        'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',],
+        borderColor: [
+            'black',
+            'black',
+            'black',
+            'black',
+            'black',
+            'black'
+        ],
+        borderWidth: 2.5
+    }]
+},
+options: {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
+}
+});
+</script>
+</div>
+<div class="card5">
+    <h2> Saldo de Gols </h2>
+    <canvas id="myChart5" width="7px" height="3px"></canvas>
+    <script>
+        var ctx = document.getElementById('myChart5').getContext('2d');
+    var myRadarChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Internacional', 'Flamengo', 'Atlético-MG', 'São Paulo', 'Fluminense', 'Palmeiras'],
+        datasets: [{
+            data: [26,19,16,17,9,14],
+            backgroundColor:[
+                'rgb(255, 0, 0)',
+                    'yellow',
+                    'black',
+                    'blue',
+                    'darkred',
+                    'green',
+        ],
+            borderColor:[
+                    'black',
+                'black',
+                'black',
+                'black',
+                'black',
+                'black'],
+            borderWidth: 2.5}]
+    },
+    options: {}
+});
+    </script>
+</div>
+</div>
+</section>
+</body>
+</html>
